@@ -1,0 +1,27 @@
+{
+  "name": "modius22/portfolio",
+  "description": "Portfolio App",
+  "type": "project",
+  "require": {
+    "silex/silex": "^2.0",
+    "twig/twig": "^2.3"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Devtronic",
+      "email": "julian-finkler@live.de"
+    },
+    {
+      "name": "Modius22",
+      "email": "info@piazzi-media.de"
+    }
+  ],
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "Modius22\\Portfolio\\": "src/",
+      "Modius22\\Tests\\Portfolio\\": "tests/"
+    }
+  }
+}
