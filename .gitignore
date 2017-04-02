@@ -1,6 +1,3 @@
 /vendor/
-/resources/*
-!/resources/.gitkeep
-!/resources/template.html.twig
 generate_json.php
 .idea
