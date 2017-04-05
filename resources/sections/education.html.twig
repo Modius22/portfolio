@@ -1,9 +1,0 @@
-<h1>{{ heading }}</h1>
-<div class="row">
-    <div class="col-md-6">
-        {% for estab in section.establishments %}
-            <li>{{ estab |keys|json_encode|raw }}</li>
-        {% endfor %}
-    </div>
-
-</div>
