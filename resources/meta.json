@@ -1,0 +1,150 @@
+{
+    "resources": {
+        "profile-img": "@images\/profilbild.jpg"
+    },
+    "sections": {
+        "\u00dcber mich": {
+            "heading": "About Me",
+            "tags": [
+                "L\u00f6sungsorientiert",
+                "Strukturiert",
+                "Kreativ",
+                "Vertrauenswu\u0308rdig",
+                "Loyal",
+                "Zielstrebig"
+            ],
+            "description": "Hier ist Platz f\u00fcr einen Beschreibungstext",
+            "template": "sections\/about_me.html.twig"
+        },
+        "Aktueller Beruf": {
+            "template": "sections\/main_job.html.twig",
+            "position": "IT-Consultant",
+            "timespan": "2016 - Heute",
+            "description": "                <ul>\r\n                  <li>Technische Beratung im Bereich IT-Service-Management auf Basis von Open Source.<\/li>\r\n                  <li>Durchf\u00fchrung von Workshops mit Anforderungsdefinition des Kunden.<\/li>\r\n                  <li>Design, Planung und Management von Projekten.<\/li>\r\n                  <li>\u00dcbergabe operativer L\u00f6sungen in die Produktion.<\/li>\r\n                  <li>Unterweisung und Schulung der implementierten L\u00f6sungen.<\/li>\r\n                  <li>Online Redakteur f\u00fcr den Firmenblog.<\/li>\r\n                <\/ul>",
+            "skills": {
+                "OpenSource": 100,
+                "i-doit": 90,
+                "OTRS": 85,
+                "Konzeptionierung": 50,
+                "Schulungen": 50,
+                "Prozessmanagement": 30,
+                "ITIL": 30,
+                "Projektmanagement": 30,
+                "openITCOCKPIT": 25,
+                "DevOps": 20
+            }
+        },
+        "Nebenjob Beruf": {
+            "template": "sections\/side_job.html.twig",
+            "position": "Inhaber",
+            "timespan": "2014 - Heute",
+            "description": "                <ul>\r\n                  <li>Webdevelopment<\/li>\r\n                  <li>Content Management<\/li>\r\n                  <li>Social-Media Management<\/li>\r\n                  <li>Online Marketing<\/li>\r\n                  <li>Design, Planung und Management von Projekten.<\/li>\r\n                <\/ul>",
+            "skills": {
+                "Symfony": 40,
+                "Bootstrap": 30,
+                "Twig": 20,
+                "Contentmanagement": 50,
+                "Social Media": 75,
+                "Fotografie": 10
+            }
+        },
+        "Lebenslauf": {
+            "template": "sections\/cv.html.twig",
+            "position": "              <ul>\r\n                <li>Analytik<\/li>\r\n                <li>Administrator<\/li>\r\n                <li>Consultant<\/li>\r\n                <li>NOC Engineer<\/li>\r\n                <li>2nd Lvl Supporter<\/li>\r\n              <\/ul>",
+            "vita": "            <ul>\r\n                <li><\/li>\r\n            <\/ul>"
+        },
+        "education": {
+            "heading": "Ausbildung",
+            "template": "sections\/education.html.twig",
+            "establishments": {
+                "Wilhelm B\u00fcchner Hochschule": "Bachelor of Science Digitale Medien - Spieleentwicklung",
+                "Staatliche Technikakademie Weilburg": "Ausbildung zum staat. gep. tech. Assistenten fu\u0308r Informationsverarbeitung, Fachrichtung Computersysteme und Netzwerktechnik",
+                "TU Darmstadt": "Bachelor of Science Informatik"
+            }
+        },
+        "Skillsets": {
+            "template": "sections\/skill_sets.html.twig",
+            "skills": {
+                "Betriebssysteme": {
+                    "Windows Server ": 20,
+                    "Ubuntu": 50,
+                    "Cent OS": 70,
+                    "OS X": 90
+                },
+                "Linux Services": {
+                    "Domain Name Service": 50,
+                    "Webserver": 80,
+                    "Datenbankserver": 30,
+                    "Cluster": 30,
+                    "File-\/Logmanagement": 20,
+                    "Logrotate": 70,
+                    "Cronjobs": 30
+                },
+                "Windows Services": {
+                    "Active Directory": 60,
+                    "DFS": 10,
+                    "Citrix": 50,
+                    "Cluster": 23,
+                    "WSUS": 70,
+                    "Terminalserver": 5
+                },
+                "Webentwicklung": {
+                    "Symfony": 45,
+                    "Bootstrap": 45,
+                    "Twig": 25,
+                    "PHP": 20,
+                    "HTML": 30,
+                    "CSS": 40,
+                    "JS": 10
+                },
+                "Webserveradministration": {
+                    "Apache": 10,
+                    "Tomcat": 10,
+                    "Security": 10,
+                    "PHP\/PHPModule": 20,
+                    "File-\/Logmanagement": 20,
+                    "Troubelshooting": 30
+                },
+                "IT Servie Management": {
+                    "idoit": 90,
+                    "OTRS": 80,
+                    "Jira": 30,
+                    "Icinga": 60,
+                    "openITCOCKPIT": 50,
+                    "Zabbix": 10
+                },
+                "Virtualisierung": {
+                    "VMWare": 90,
+                    "KVM": 80,
+                    "oVirt": 30,
+                    "Xen": 60,
+                    "Hyper-V": 10
+                },
+                "Security": {
+                    "openVAS": 30,
+                    "Nessus": 30,
+                    "IT Grundschutz": 90,
+                    "Serverh\u00e4rtung": 60,
+                    "Firewall Management": 45
+                }
+            }
+        },
+        "Projekte": {
+            "template": "sections\/projects.html.twig",
+            "projects": {
+                "ABC": {
+                    "image": "http:\/\/www.hildebrandt-consulting.com\/files\/HC-Bilder\/projektmanagement.jpg",
+                    "tags": [
+                        "abc",
+                        "projekt management"
+                    ],
+                    "description": "asdfasfaqlhsdfkhaqbfkljq",
+                    "own_project": true
+                },
+                "DEF": {
+                    "description": "asdfasfaqlhsdfkhaqbfkljq"
+                }
+            }
+        }
+    }
+}

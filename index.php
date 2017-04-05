@@ -9,6 +9,8 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
     'twig.path' => __DIR__ . '/resources',
 ));
 
+
+
 $app['twig']->addFunction(new Twig_Function('resource', function ($name, $embed = false, $base64 = true) use ($app) {
     $globals = $app['twig']->getGlobals();
     $resources = $globals['resources'];

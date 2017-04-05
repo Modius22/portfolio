@@ -1,0 +1,32 @@
+<h1>{{ heading }}</h1>
+
+<div class="row">
+    {% for skillSetName, skills in section.skills %}
+        <div class="col-md-4">
+            <h2>{{ skillSetName }}</h2>
+            <canvas id="skillset_{{ loop.index }}" height="300" width="300"></canvas>
+            <script>
+
+                var skillsetData_{{ loop.index }} = {
+                    labels: {{ skills|keys|json_encode|raw }},
+                    datasets: [
+                        {
+                            fillColor: "rgba(220,220,220,0.5)",
+                            strokeColor: "rgba(220,220,220,1)",
+                            data: {{ skills|values|json_encode|raw }}
+                        }
+                    ]
+                };
+
+            </script>
+        </div>
+    {% endfor %}
+</div>
+<script>
+    $(document).ready(function () {
+        {% for skillSetName, skills in section.skills %}
+        new Chart(document.getElementById("skillset_{{ loop.index }}").getContext("2d")).Radar(skillsetData_{{ loop.index }}, {});
+        {% endfor %}
+    });
+</script>
+
