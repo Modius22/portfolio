@@ -4,4 +4,4 @@ generate_json.php
 /resources/*		
 !/resources/.gitkeep		
 !/resources/template.html.twig
-*.DS_Store*
+*.DS_Store
