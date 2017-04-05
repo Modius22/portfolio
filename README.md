@@ -2,11 +2,14 @@
 Work in progress
 
 ## Installation
+**Required PHP 7**
+
 ```bash
 git clone https://github.com/Modius22/portfolio.git MyPortfolio
 ```
-~~composer create-project modius22/portfolio MyPortfolio~~ (later)
-
+```bash
+composer create-project modius22/portfolio MyPortfolio
+```
 ## Basic Usage
 ```bash
 cd MyPortfolio
