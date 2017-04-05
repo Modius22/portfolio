@@ -7,6 +7,7 @@ Work in progress
 ```bash
 git clone https://github.com/Modius22/portfolio.git MyPortfolio
 ```
+or
 ```bash
 composer create-project modius22/portfolio MyPortfolio
 ```
