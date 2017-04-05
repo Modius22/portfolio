@@ -1,3 +1,7 @@
 /vendor/
 generate_json.php
 .idea
+/resources/*		
+!/resources/.gitkeep		
+!/resources/template.html.twig
+*.DS_Store*
