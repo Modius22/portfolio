@@ -91,6 +91,9 @@ If the resource-path starts with **@** the file is loaded from the resources-dir
 ## Custom Template
 To override the base template, create a **template.custom.html.twig** in the resources directory.
 
+## Example Site
+
+The portfolio from Christian Piazzi (Modius22): http://www.christian.piazzi.org
 
 ## Contribute
 
