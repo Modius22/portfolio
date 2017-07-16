@@ -1,5 +1,7 @@
 # Portfolio Generator
 Work in progress
+## Roadmap
++add email fucntion (in progress)
 
 ## Installation
 **Required PHP 7**
