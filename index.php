@@ -1,5 +1,7 @@
 <?php
 
+
+
 require_once __DIR__ . '/vendor/autoload.php';
 
 $app = new Silex\Application();
@@ -53,5 +55,55 @@ $app->get('/', function () use ($app) {
     }
     return $app['twig']->render($templateFile, $templateData);
 });
+
+// Setup for email Custom_Background::attachment_fields_to_edit
+
+$app->register(new Silex\Provider\SwiftmailerServiceProvider());
+
+$app['swiftmailer.options'] = array(
+    'host' => 'PLACEHOLDER',
+    'port' => '25',
+    'username' => 'PLACEHOLDER',
+    'password' => 'PLACEHOLDER',
+    'encryption' => null,
+    'auth_mode' => null
+);
+
+$app->match('/', function(Request $request) use ($app) {
+    $form = $app['form.factory']->createBuilder('form')
+        ->add('name', 'text')
+        ->add('message', 'textarea')
+        ->getForm();
+    $request = $app['request'];
+    if ($request->isMethod('POST'))
+    {
+        $form->bind($request);
+        if ($form->isValid())
+        {
+            $data = $form->getData();
+            $messagebody = $data['message'];
+            $name        = $data['name'];
+            $subject = "Message from ".$name;
+            $app['mailer']->send(\Swift_Message::newInstance()
+                ->setSubject($subject)
+                ->setFrom(array('PLACEHOLDER')) // replace with your own
+                ->setTo(array('PLACEHOLDER'))   // replace with email recipient
+                ->setBody($app['twig']->render(__DIR__ . '/resources/sections/email.html.twig',   // email template
+                    array('name'      => $name,
+                          'message'   => $messagebody,
+                    )),'text/html'));
+        }
+        return $app['twig']->render(__DIR__ . '/resources/sections/email.html.twig', array(
+            'message' => 'Message Sent',
+            'form' => $form->createView()
+        ));
+    }
+    return $app['twig']->render(__DIR__ . '/resources/sections/email.html.twig', array(
+            'message' => 'Send message to us',
+            'form' => $form->createView()
+        )
+    );
+}, "GET|POST");
+
 
 $app->run();

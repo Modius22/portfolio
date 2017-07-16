@@ -1,0 +1,10 @@
+{
+  "sections": {
+    "About me": {
+      "description": "Hello my name is ..."
+    },
+    "Skills": {
+      "description": "<ul><li>Coding</li><li>CSS</li></ul>"
+    }
+  }
+}
