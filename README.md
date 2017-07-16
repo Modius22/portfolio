@@ -93,6 +93,11 @@ If the resource-path starts with **@** the file is loaded from the resources-dir
 ## Custom Template
 To override the base template, create a **template.custom.html.twig** in the resources directory.
 
+## German Tutorial
+Part 1: http://www.modius-techblog.de/programmierung/eigene-online-visitenkarte-richtig-erstellen/
+Part 2: http://www.modius-techblog.de/programmierung/online-visitenkarte-die-erste-sektion-mit-twig/
+Part 3: http://www.modius-techblog.de/programmierung/online-visitenkarte-aktueller-job-mit-progress-bar-darstellen/
+
 ## Example Site
 
 The portfolio from Christian Piazzi (Modius22): http://www.christian.piazzi.org
