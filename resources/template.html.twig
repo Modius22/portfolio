@@ -36,7 +36,7 @@
                 {% endif %}
             {% endfor %}
           {% block email %}
-          
+            {% include 'sections/email.html.twig' with {'name' : 'foobar',message: 'baz'} %}
           {% endblock %}
         </div>
     </body>
