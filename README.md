@@ -2,10 +2,8 @@
 Work in progress
 
 ## Change Log
-### Version 2.0
+### Version 1.1
 * remove silex 
-* add mail support
-* add static site builder
 
 ## Installation
 **Required PHP 7**
