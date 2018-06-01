@@ -69,7 +69,7 @@ $app['swiftmailer.options'] = array(
     'auth_mode' => null
 );
 
-$app->match('/', function(Request $request) use ($app) {
+$app->match('/contact', function(Request $request) use ($app) {
     $form = $app['form.factory']->createBuilder('form')
         ->add('name', 'text')
         ->add('message', 'textarea')

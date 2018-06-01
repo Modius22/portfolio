@@ -1,6 +1,15 @@
 
 {% block email %}
-test12
-  <p> Message from: {{name}}</p>
-  <p>{{message}}</p>
+  <form action="index.php/contact" method="GET" id="braintree-payment-form">
+    <p>
+      <label>Name</label>
+      <input type="text" size="20" autocomplete="off" data-encrypted-name="name" />
+    </p>
+    <p>
+      <label>Message</label>
+      <input type="text" size="4" autocomplete="off" data-encrypted-name="message" />
+    </p>
+
+    <input type="submit" id="submit" />
+  </form>
 {% endblock %}
