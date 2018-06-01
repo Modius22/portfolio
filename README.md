@@ -1,7 +1,11 @@
 # Portfolio Generator
 Work in progress
-## Roadmap
-+add email fucntion (in progress)
+
+## Change Log
+### Version 2.0
+* remove silex 
+* add mail support
+* add static site builder
 
 ## Installation
 **Required PHP 7**
